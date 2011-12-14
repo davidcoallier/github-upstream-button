@@ -1,0 +1,17 @@
+{
+  "name": "GitHub Upstream Link",
+  "version": "1.0",
+  "description": "A GitHub extension that adds the fork url in the repo buttons",
+  "browser_action": {
+    
+  },
+  "content_scripts": [{
+      "matches": ["https://github.com/*"],
+      "js": ["jquery.js"],
+      "run_at": "document_start"
+  },{
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+  }] 
+}
