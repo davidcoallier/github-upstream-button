@@ -17,11 +17,18 @@ function createForkElement(forkLink) {
     upstreamLiA.html('Upstream');
 
     upstreamLiA.bind('click', function() {
+        var sel = $(this);
+        $('.clone-urls li.selected').removeClass('selected');
+
         $('.url-box input.url-field').val(gitlink);
+
+        upstreamLi.addClass('selected');
+
         return false;
     });
 
     upstreamLi.append(upstreamLiA);
+
 
     $('.clone-urls').append(upstreamLi);
 }
