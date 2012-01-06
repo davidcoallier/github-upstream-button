@@ -1,6 +1,6 @@
 {
   "name": "GitHub Upstream Link",
-  "version": "1.0",
+  "version": "1.2",
   "description": "A GitHub extension that adds the fork url in the repo buttons",
   "browser_action": {
     
